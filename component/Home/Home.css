@@ -1,0 +1,210 @@
+/*.react-icons{
+    height: 10px;
+}*/
+.banner{
+    background-image: var(--background-image);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vmin;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color:var(--clr-homepage);
+}
+
+body{
+/*  background-color: rgb(238, 205, 42) ;*/
+background-color: var(--clr-main-background) !important;
+}
+.banner > h1 {
+    margin: 5vmax;
+  
+    font: 600 2.5vmax "Roboto";
+  }
+  
+  .banner > p {
+    font: 300 1.4vmax "Lucida Sans";
+  }
+  
+  .banner > a > button {
+    margin-bottom: 5vmax;
+    cursor: url("../../images/cursor.png"),auto;
+    background-color: white;
+    border: var(--clr-input-borders);
+    border-radius: 20px;
+    padding: 1vmax;
+    transition: all 0.5s;
+    width: 9vmax;
+    font: 500 1vmax "Roboto";
+  }
+  .banner > a > button:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--clr-homepage);
+  }
+  .banner>div{
+    padding: 4vmax;
+    font-size: 2vmax;
+    font-weight: bold;
+    color: var(--clr-homepage);
+  }
+
+  .Typewriter__cursor{
+    display:none;
+  }
+
+  /*.banner::after {
+    content: "";
+    width: 100vw;
+    height: 100vmin;
+    background-color: azure;
+    position: absolute;
+ /*   top: 0%;*/
+   /* left: 0;*/
+   /* clip-path: polygon(100% 85%, 0 100%, 100% 100%);*/
+    /*max-width: 100%;*/
+  /*}*/
+
+  .homeHeading {
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 1.4vmax;
+    border-bottom: var(--clr-input-borders);
+    width: 20vmax;
+    padding: 1vmax;
+    margin: 5vmax auto;
+    color: var(--clr-text-primary);
+  }
+
+  .container {
+    display: flex;
+    margin: 2vmax auto;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .productCard {
+    width: 14vmax;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--clr-text-primary);
+    margin: 2vmax;
+    transition: all 0.5s;
+    padding-bottom: 0.5vmax;
+   /* background-image:linear-gradient(to right,rgb(231, 229, 201),rgb(220, 205, 238));*/
+  background-color: var(--clr-card-background);
+    border-radius: 0.125em;
+  }
+  
+  .productCard > img {
+    width: 100%;
+    height: 200px;
+    background-color: #f2f2f2;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 0.125em;
+    border-top-right-radius: 0.125em;
+  }
+  
+  .productCard > div {
+   /*margin: 0.5vmax;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .productCardSpan {
+    margin: 0.5vmax;
+    font: 300 0.7vmax "Roboto";
+    color: var(--clr-text-secondary);
+  }
+  
+  .productCard > div > Span {
+    margin: 0.5vmax;
+    font: 300 0.7vmax "Roboto";
+  }
+  
+  .productCard > p {
+    font-family: "Roboto";
+    font-size: 1vmax;
+    margin:  0.5vmax;
+    margin-bottom: 0;
+  }
+
+  .name{
+    font-weight: bold;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+  }
+  
+  .description{
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    color: var(--clr-text-secondary);
+    font-size: 0.8vmax !important;
+    font-style: italic;
+    font-family: cursive !important;
+    font-weight: bold;
+  }
+
+  .productCard > span {
+   /* margin: 0.5vmax;*/
+   margin-left: 0.5vmax;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 0.9vmax;
+  }
+  
+  .productCard:hover {
+    box-shadow: 0 0 5px rgba(74, 151, 68, 0.653);
+  
+    transform: translateY(-1vmax);
+  }
+
+  .discount{
+    background-image: linear-gradient(to right,var(--clr-discount),var(--clr-card-background));
+    width: 40%;
+    border-radius: 8%;
+    font: 300 1vmax;
+  }
+   
+  .discount> span{
+    color:white;
+  }
+  
+
+  .originalPrice{
+    text-decoration: line-through;
+    color: rgba(230, 52, 52, 0.821);
+  }
+
+  .discountedPriceSpan{
+    color:green;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .productCard > p {
+      font-size: 1.7vmax;
+    }
+  
+    .productCard > div {
+      margin: 0vmax;
+      display: block;
+    }
+  
+    .productCard > span {
+      font-size: 1.5vmax;
+    }
+  
+    .productCard > div > span {
+      margin: 0 0.5vmax;
+      font: 300 1vmax "Roboto";
+    }
+  }

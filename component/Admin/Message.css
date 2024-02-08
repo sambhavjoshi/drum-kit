@@ -1,0 +1,50 @@
+
+body{
+    background-color: var(--clr-main-background);
+}
+.messageContainer {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--clr-message-box);
+    border-left: var(--clr-input-borders);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+.heading{
+  padding: 5vmax 8vmax;
+  font: 1.2vmax cursive;
+  color: var(--clr-text-primary);
+}
+  /* CSS code for the individual sections */
+  .name {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .address {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .time {
+    font-size: 14px;
+    color: var(--clr-text-secondary);
+    margin-bottom: 10px;
+  }
+
+  .date {
+    font-size: 14px;
+    color: var(--clr-text-secondary);
+    margin-bottom: 10px;
+  }
+  
+  .message {
+    padding : 0vmax 10vmax;
+    font-size: 18px;
+    line-height: 1.5;
+    font: 300 1.2vmax cursive;
+    color: var(--clr-text-primary);
+  }
