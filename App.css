@@ -1,0 +1,475 @@
+.MuiRating-iconFilled > svg {
+  color: gold;
+}
+
+.light-mode {
+
+  --background-image:url("./images/background.png");
+  --clr-homepage:rgb(8, 8, 8);
+
+  --clr-neon: hsl(103, 100%, 54%);
+  --clr-bg: hsl(0, 0%, 100%);
+  --clr-main-theme: rgb(71, 103, 207);
+  --clr-main-background: white;
+  --clr-main-hover: darkblue;
+  --clr-message-box: azure;
+  --clr-new-product-background: rgb(221, 221, 221);
+  --clr-dashboard-h1: rgba(0, 0, 0, 0.733);
+  --clr-text-secondary: rgba(29, 30, 31, 0.777);
+  --clr-text-primary: rgba(0, 0, 0, 0.816);
+  --clr-text-tertiary: rgba(255, 255, 255, 0.727);
+  --clr-sidebar: rgba(0, 0, 0, 0.493);
+  --clr-sidebarlogo-hover: rgb(206, 71, 255);
+  --clr-edit: rgba(0, 0, 0, 0.527);
+  --clr-svg: rgba(0, 0, 0, 0.623);
+  --clr-input-borders: 1px solid rgba(0, 0, 0, 0.267);
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.467);
+  --clr-hover-selectFile: rgb(235, 235, 235);
+  --clr--cartInput-hover: rgba(0, 0, 0, 0.767);
+  --clr--connectorLine: rgba(0, 0, 0, 0.349);
+  --clr-orderSuccess: rgb(51, 51, 51);
+  --clr-second-background: rgb(231, 231, 231);
+  --clr-dialog-background: rgb(215, 206, 206);
+
+  --clr-card-background: rgba(234, 218, 186, 0.592);
+  --clr--productCard: rgb(37, 37, 37);
+  --clr-discount: rgb(89, 64, 233);
+
+  --clr-contact-background: linear-gradient(
+    to right,
+    rgb(190, 255, 234),
+    azure
+  );
+
+  --clr-about-background: linear-gradient(
+    to bottom right,
+    rgb(78, 81, 255),
+    rgb(74, 137, 189)
+  );
+  --box-shadow-about:-10px 10px 10px rgba(0, 0, 0, 0.192);
+
+  background-color: var(--clr-main-background) !important;
+
+  .MuiRating-iconEmpty > svg {
+    color: grey;
+  }
+}
+
+.dark-mode {
+
+  --background-image:url("./images/darkBackground.png");
+  --clr-homepage:azure;
+
+  --clr-neon: hsl(103, 100%, 54%);
+  --clr-bg: hsl(0, 0%, 100%);
+  --clr-main-theme: rgb(107, 223, 78);
+  --clr-main-background: rgb(30, 29, 29);
+  --clr-main-hover: rgb(140, 255, 125);
+  --clr-message-box: rgb(30, 29, 29);
+  --clr-new-product-background: rgb(30, 29, 29);
+  --clr-dashboard-h1: rgb(206, 245, 209);
+  --clr-text-secondary: rgba(245, 240, 240, 0.778);
+  --clr-text-primary: rgba(255, 255, 255, 0.814);
+  --clr-text-tertiary: rgba(0, 0, 0, 0.727);
+  --clr-sidebar: rgba(255, 255, 255, 0.778);
+  --clr-sidebarlogo-hover: rgb(71, 255, 249);
+  --clr-edit: rgba(255, 255, 255, 0.645);
+  --clr-svg: rgba(255, 255, 255, 0.623);
+  --clr-input-borders: 1px solid rgba(255, 255, 255, 0.267);
+  --box-shadow: 0 0 10px rgba(255, 255, 255, 0.267);
+  --clr-hover-selectFile: rgba(50, 45, 45, 0.784);
+  --clr--cartInput-hover: rgba(255, 255, 255, 0.767);
+  --clr--connectorLine: rgba(255, 255, 255, 0.749);
+  --clr-orderSuccess: rgb(204, 204, 204);
+  --clr-neon-pink: rgb(247, 25, 214);
+  --clr-pink-background: rgba(255, 0, 233, 0.803);
+  --clr-second-background: rgb(54, 54, 54);
+  --clr-dialog-background: rgb(50, 48, 48);
+
+  --clr-card-background: rgb(11, 11, 11);
+  --clr--productCard: rgb(37, 37, 37);
+  --clr-discount: rgb(8, 187, 4);
+
+  --clr-contact-background: linear-gradient(
+    to right,
+    rgb(30, 31, 31),
+    rgb(29, 30, 30)
+  );
+
+  --clr-about-background: linear-gradient(
+    to bottom right,
+    rgb(30, 29, 29),
+    rgb(30, 29, 29)
+  );
+  --box-shadow-about:-10px 10px 10px rgba(255, 255, 255, 0.192);
+
+  background-color: var(--clr-main-background) !important;
+
+  /* sidebar -- adding glow on text*/
+  .sidebar a:hover {
+    color: var(--clr-main-theme);
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 0.6vmax var(--clr-main-hover));
+  }
+
+  .sidebar > a > img:hover {
+    filter: drop-shadow(0 0 0.6vmax var(--clr-sidebarlogo-hover));
+  }
+
+  /*dashboard -- adding glow on circles*/
+  .dashboardSummaryBox2 > a:hover {
+    filter: drop-shadow(0 0 0.6vmax rgb(255, 233, 174));
+  }
+
+  .dashboardSummaryBox2 > a:first-child:hover {
+    filter: drop-shadow(0 0 0.6vmax rgb(255, 110, 110));
+  }
+
+  #abc:hover {
+    filter: drop-shadow(0 0 0.6vmax rgb(110, 255, 115));
+  }
+
+  .dashboardSummaryBox2 > a:last-child:hover {
+    filter: drop-shadow(0 0 0.6vmax rgb(179, 99, 173));
+  }
+
+  /*ProductList -- adding glow*/
+
+  .productListTable a:hover,
+  .itemProps > p:hover,
+  .MuiSlider-thumb:hover,
+  .category-link:hover,
+  .productListTable button:hover,
+  .category-link-selected,
+  .discountedPriceSpan,
+  .mail > a:hover,
+  .resume:hover,
+  .linksReactNavbar:hover,
+  .nav4 > a > svg:hover {
+    filter: drop-shadow(0 0 0.6vmax var(--clr-main-hover));
+  }
+
+  .orderDetailsCartItemsContainer > div > a:hover,
+  .itemProps > a:hover,
+  .detailsBlock-3-1-1 > button:hover,
+  .aboutSectionContainer2 > a > img:hover,
+  .rightFooter > a > img:hover,
+  .banner>div {
+    filter: drop-shadow(0 0 0.6vmax rgb(245, 242, 242));
+  }
+
+  .productCard:hover {
+    filter: drop-shadow(0 0 0.3vmax rgb(100, 99, 99));
+  }
+
+
+
+
+
+  /*create Product Button and similar buttons -- neon buttons*/
+  #createProductBtn,
+  .checkOutBtn > button,
+  .shippingBtn,
+  .proceedToPayBtn,
+  .paymentFormBtn,
+  .editProfileBtn,
+  .updateProfileBtn,
+  .searchBtn,
+  .applyButton,
+  .addToCart,
+  .submitReview,
+  .Drop,
+  .loginBtn {
+    font-size: 1.3rem;
+
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--clr-neon) !important;
+    border: var(--clr-neon) 0.125em solid !important;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.6vmax hsla(0, 0%, 100%, 0.344), 0 0 0.6vmax currentColor;
+
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+
+    position: relative;
+  }
+
+  #createProductBtn::before,
+  .checkOutBtn > button::before,
+  .shippingBtn::before,
+  .proceedToPayBtn::before,
+  .paymentFormBtn::before,
+  .editProfileBtn::before,
+  .updateProfileBtn::before,
+  .searchBtn::before,
+  .applyButton::before,
+  .addToCart::before,
+  .submitReview::before,
+  .Drop::before,
+  .loginBtn::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background-color: var(--clr-neon);
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 70%;
+
+    transform: perspective(2.5em) rotateX(30deg) scale(1, 0.3);
+    filter: blur(1em);
+    opacity: 0.7;
+  }
+
+  #createProductBtn::after,
+  .checkOutBtn > button::after,
+  .shippingBtn::after,
+  .proceedToPayBtn::after,
+  .paymentFormBtn::after,
+  .editProfileBtn::after,
+  .updateProfileBtn::after,
+  .searchBtn::after,
+  .applyButton::after,
+  .addToCart::after,
+  .submitReview::after,
+  .Drop::after,
+  .loginBtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    opacity: 0;
+    background-color: var(--clr-neon);
+    z-index: -1;
+    transition: opacity 100ms linear;
+  }
+
+  #createProductBtn:hover,
+  #createProductBtn:focus,
+  .checkOutBtn > button:hover,
+  .checkOutBtn > button:focus,
+  .shippingBtn:hover,
+  .shippingBtn:focus,
+  .proceedToPayBtn:hover,
+  .proceedToPayBtn:focus,
+  .paymentFormBtn:hover,
+  .paymentFormBtn:focus,
+  .editProfileBtn:hover,
+  .editProfileBtn:focus,
+  .updateProfileBtn:hover,
+  .updateProfileBtn:focus,
+  .searchBtn:hover,
+  .searchBtn:focus,
+  .applyButton:hover,
+  .applyButton:focus,
+  .addToCart:hover,
+  .addToCart:focus,
+  .submitReview:hover,
+  .submitReview:focus,
+  .Drop:hover,
+  .Drop:focus,
+  .loginBtn:hover,
+  .loginBtn:focus {
+    color: var(--clr-text-primary) !important;
+    text-shadow: none;
+    background-color: var(--clr-neon);
+    box-shadow: inset 0 0 1em 0 var(--clr-neon), 0 0 1em 0 var(--clr-neon);
+  }
+
+  #createProductBtn:hover::before,
+  #createProductBtn:focus::before,
+  .checkOutBtn > button:hover::before,
+  .checkOutBtn > button:focus::before,
+  .shippingBtn:hover::before,
+  .shippingBtn:focus::before,
+  .proceedToPayBtn:hover::before,
+  .proceedToPayBtn:focus::before,
+  .paymentFormBtn:hover::before,
+  .paymentFormBtn:focus::before,
+  .editProfileBtn:hover::before,
+  .editProfileBtn:focus::before,
+  .updateProfileBtn:hover::before,
+  .updateProfileBtn:focus::before,
+  .searchBtn:hover::before,
+  .searchBtn:focus::before,
+  .applyButton:hover::before,
+  .applyButton:focus::before,
+  .addToCart:hover::before,
+  .addToCart:focus::before,
+  .submitReview:hover::before,
+  .submitReview:focus::before,
+  .Drop:hover::before,
+  .Drop:focus::before,
+  .loginBtn:hover::before,
+  .loginBtn:focus::before {
+    opacity: 1;
+  }
+
+  #createProductBtn:hover::after,
+  #createProductBtn:focus::after,
+  .checkOutBtn > button:hover::after,
+  .checkOutBtn > button:focus::after,
+  .shippingBtn:hover::after,
+  .shippingBtn:focus::after,
+  .proceedToPayBtn:hover::after,
+  .proceedToPayBtn:focus::after,
+  .paymentFormBtn:hover::after,
+  .paymentFormBtn:focus::after,
+  .editProfileBtn:hover::after,
+  .editProfileBtn:focus::after,
+  .updateProfileBtn:hover::after,
+  .updateProfileBtn:focus::after,
+  .searchBtn:hover::after,
+  .searchBtn:focus::after,
+  .applyButton:hover::after,
+  .applyButton:focus::after,
+  .addToCart:hover::after,
+  .addToCart:focus::after,
+  .submitReview:hover::after,
+  .submitReview:focus::after,
+  .Drop:hover::after,
+  .Drop:focus::after,
+  .loginBtn:hover::after,
+  .loginBtn:focus::after {
+    opacity: 1;
+  }
+
+  /*pink neon buttons*/
+  .neonButtons {
+    font-size: 1.3rem;
+
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--clr-pink-background) !important;
+    color: var(--clr-neon-pink) !important;
+    border: var(--clr-neon-pink) 0.125em solid !important;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.6vmax hsla(0, 0%, 100%, 0.344), 0 0 0.6vmax currentColor;
+
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon-pink),
+      0 0 0.5em 0 var(--clr-neon-pink);
+
+    position: relative;
+  }
+
+  .neonButtons::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--clr-neon-pink) !important;
+    /* top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;*/
+    filter: blur(1em);
+    opacity: 0.7;
+  }
+
+  .neonButtons::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em var(--clr-neon-pink);
+    opacity: 0;
+    background-color: var(--clr-neon-pink) !important;
+    z-index: -1;
+    transition: opacity 100ms linear;
+  }
+
+  .neonButtons:hover,
+  .neonButtons:focus {
+    color: var(--clr-bg) !important;
+    text-shadow: none;
+    background-color: var(--clr-neon-pink) !important;
+  }
+
+  .neonButtons:hover::before,
+  .neonButtons:focus::before {
+    opacity: 1;
+  }
+  .neonButtons:hover::after,
+  .neonButtons:focus::after {
+    opacity: 1;
+  }
+
+  /*create product form*/
+  .createProductForm,
+  .updateProfileBox,
+  .updatePasswordBox {
+    border-radius: 3% !important;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.267);
+  }
+
+/*rgb(132, 183, 255)*/
+  /*cartInput*/
+  .cartInput > button:hover {
+    box-shadow: inset 0 0 0.5em 0 var(--clr--cartInput-hover),
+      0 0 0.5em 0 var(--clr--cartInput-hover);
+  }
+
+  .MuiRating-iconEmpty > svg {
+    color: rgb(187, 183, 183);
+  }
+
+  /*seacrh box*/
+  .searchBox > input[type="text"] {
+    box-shadow: var(--box-shadow);
+  }
+
+  /*products*/
+  .category-link {
+    font-weight: 300;
+  }
+
+  /*glowing stars in ratings*/
+  .MuiRating-iconFilled > svg {
+    filter: drop-shadow(0 0 0.6vmax rgb(247, 222, 80));
+  }
+
+}
+/* var(--clr-main-background)*/
+
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  cursor: url("http://www.rw-designer.com/cursor-extern.php?id=192773"), auto;
+  background-color: var(--clr-main-background);
+}
+
+a,
+button {
+  cursor: url("./images/cursor.png"), auto;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.greenColor {
+  color: green !important;
+}
+
+.redColor {
+  color: red !important;
+}
